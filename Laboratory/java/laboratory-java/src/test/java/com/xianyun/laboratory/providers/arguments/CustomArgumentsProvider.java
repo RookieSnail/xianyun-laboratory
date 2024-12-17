@@ -15,6 +15,9 @@ import java.util.stream.Stream;
 public class CustomArgumentsProvider implements ArgumentsProvider {
 	@Override
 	public Stream<? extends Arguments> provideArguments(ExtensionContext context) {
-		return Stream.of(Arguments.of("",1), Arguments.of("banana",2));
+		// 一个参数
+		return Stream.of(Arguments.of(""), Arguments.of("banana"));
+		//多个参数
+//		return Stream.of(Arguments.of("",1), Arguments.of("banana",2));
 	}
 }
